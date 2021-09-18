@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Formulario</title>
+</head>
+<body>
+    <!--Existen dos tipos principales de acciones GET y POST-->
+    <!--Ruta a donde se van a mandar los datos-->
+    <form action="./action.html" method="get">
+        <fieldset>
+            <legend>Registro de Datos</legend>
+        <div>
+            <div>
+                <label for="name">Nombre:</label><br>
+            </div>
+            <input type="text" name="name" id="name" placeholder="Nombre...." ><br><br>
+            <div>
+            <label for="age">Edad</label><br>
+                <input type="number" name="age" id="age" min="13" max="50" step="2" required><br><br>
+            </div>
+        </div>
+        <div>
+            <div>
+                <label for="description">Descripcion</label>
+            </div>
+            <!--el valor por defecto va entre la apertura y el cierre de la etiqueta-->
+            <textarea name="description" id="description" cols="30" rows="10" placeholder="Descripcion..."></textarea>
+        </div>
+        <!--Sentencia Select-->
+        <div>
+            <div>
+                <label for="car">Carro:</label>
+                <select name="car" id="car">
+                    <option value="">Selecciona un carro.</option>
+                    <option value="volvo">Volvo</option>
+                    <option value="seat">Seat</option>
+                    <option value="fiat">Fiat</option>
+                    <option value="audi">Audi</option>
+                    <option value="vmw">VMW</option>
+                </select>
+            </div>
+        </div>
+        <!--RadioButton para seleccionar una sola opcion-->
+        <div>
+            <p>Selecciona sexo:</p>
+            <div>
+                <input type="radio" name="sexo" id="masculino" value="masculino">
+                <label for="masculino">Masculino</label>
+            </div>
+            <div>
+                <input type="radio" name="sexo" id="femenino" value="femenino">
+                <label for="femenino">Femenino</label>
+            </div>
+            <div>
+                <input type="radio" name="sexo" id="na" value="na">
+                <label for="na">Prefiero no decir</label>
+            </div>
+        </div>
+        <!--CheckBox -->
+        <div>
+            <p>Vehiculos con los que cuenta.</p>
+            <div>
+                <input type="checkbox" name="vehiculo1" id="bici" value="bici">
+                <label for="bici">Tengo una bicicleta</label>
+            </div>
+            <div>
+                <input type="checkbox" name="vehiculo2" id="carro" value="carro">
+                <label for="carro">Tengo un carro</label>
+            </div>
+            <div>
+                <input type="checkbox" name="vehiculo3" id="bote" value="bote">
+                <label for="bote">Tengo un bote</label>
+            </div>
+        </div>
+        
+        <input type="submit" value="Guardar">
+        
+    </fieldset>
+    </form>
+    <!--Button-->
+    <div>
+            <!--<button type="button" onclick="Hola">Da click</button>-->
+            <button type="button">Click Me!</button>
+    </div>
+</body>
+</html>

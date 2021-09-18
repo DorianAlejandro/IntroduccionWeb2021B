@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <div>
+        <svg width="100" height="100">
+            <circle cx="50" cy="50" r="40" stroke="green" stroke-width="4" fill="yellow"/>
+        </svg>
+    </div>
+    <div>
+        <svg style="width: 200; height: 100;">
+            <rect width="200" height="100" style="fill:blueviolet; stroke-width:10; stroke:black"></rect>
+        </svg>
+    </div>
+
+    <!--Canvas-->
+    <!--HTML siempre alinea los elementos hacia la parte superior izquierda-->
+        <canvas id="mycanvas" width="200" height="100" style="border:1px solid black;" ;></canvas>
+            <script>
+                var c = document.getElementById("mycanvas"); //obtener propiedad de un elemento por medio del id
+                var ctx = c.getContext("2d");//obtener el contexto en 2d
+                ctx.moveTo(0,0);//mover el puntero en el eje x=0 y y=0
+                ctx.lineTo(200,100);//dibujar hasta un punto ejemplo hasta el eje x=200 y y=100
+                ctx.stroke();//dibujar linea
+            </script>
+</body>
+</html>

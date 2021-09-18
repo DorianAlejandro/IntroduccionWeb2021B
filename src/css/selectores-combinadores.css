@@ -1,0 +1,4 @@
+/* Selector descendientes */
+div p {
+    background-color: yellow;
+}

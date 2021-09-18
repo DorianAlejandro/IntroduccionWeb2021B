@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Agregando estilo a HTML </title>
+    <!-- <link rel="stylesheet" href="./src/css/selectores-combinadores.css"> -->
+
+   
+</head>
+<body>
+   <div>
+       <p>Parrafo 1</p>
+       <p>Parrafo 2</p>
+       <section><p>parrafo 3</p></section>
+       <p>parrafo 4</p>
+   </div>
+
+   <p>Parrafo 5</p>
+</body>
+</html>
