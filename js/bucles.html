@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Bucles en Js</title>
+</head>
+<body>
+    <script>
+        //for
+        for (let i = 0; i<6; i++) {
+            console.log('Paso numero '+ i);
+        }
+        //while
+        let a =0, b = 0;
+        while (a < 6) {
+            console.log(a);
+            a++;
+        }
+        //do while
+        do {
+            console.log(a);
+        }while (a < 6) 
+
+        //foreach
+        const arreglo = [45, 0, 30, 26, 7 ]
+        arreglo.forEach(miIterador);
+
+        console.log(arreglo[0]);
+        console.log(arreglo[1]);
+        console.log(arreglo[2]);
+
+        function miIterador(value, index) {
+            console.log('el valor del indice '+ index+ ' es' + value);
+        }
+
+    </script>
+</body>
+</html>
