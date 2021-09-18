@@ -24,16 +24,41 @@
         }while (a < 6) 
 
         //foreach
-        const arreglo = [45, 0, 30, 26, 7 ]
+        //funcion anonima es la que se utiliza directamente como parametro
+        //ejemplo foreach
+        const arreglo = [45, 5, 0, 30, 26, 7 ]
         arreglo.forEach(miIterador);
 
-        console.log(arreglo[0]);
+        /* console.log(arreglo[0]);
         console.log(arreglo[1]);
         console.log(arreglo[2]);
+ */
+        //funcion normal se declara y se puede utilizar en otros lados del codigo
+         function miIterador(value, index) {
+            console.log('el valor del indice '+ index+ ' es ' + value);
+        } 
 
-        function miIterador(value, index) {
-            console.log('el valor del indice '+ index+ ' es' + value);
-        }
+        /* arreglo.forEach((value, index, array) => {
+            console.log ('el valor del indice '+ index+ ' es' + value)
+        }); */
+
+        //METODOS DE ARREGLOS
+        console.log('metodos de arreglos.');
+
+        console.log(arreglo.toString())
+        console.log(arreglo.pop())//retorna y elimina
+        console.log(arreglo)
+        console.log(arreglo.push(55))//Agrega un valor al final
+        console.log(arreglo)
+        console.log(arreglo.shift())//retorna y elimina el primer valor
+        console.log(arreglo)
+        console.log(arreglo.splice(2, 2))//retorna y elimina en la posicion que se indica
+        console.log(arreglo)
+
+        const resultado = arreglo.filter(value => {
+            return value > 20
+        })
+        console.log(resultado);
 
     </script>
 </body>
